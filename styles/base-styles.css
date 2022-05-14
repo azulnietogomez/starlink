@@ -1,5 +1,22 @@
+:root {
+        --f-size-title: 4rem;
+        --f-size-p: 1.6rem;
+}
+
+@font-face {
+    font-family: DIN_Bold;
+    src: url(../fonts/din-bold.ttf);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 2px solid red;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: red;
+    font-family: 'DIN-Bold', sans-serif;
 }
