@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-Map_Icon">
+      <rect width="33" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="Map_Icon" clip-path="url(#clip-Map_Icon)">
+    <path id="Exclusion_1" data-name="Exclusion 1" d="M3975.59,1130.931a10.6,10.6,0,1,1,18.088-.2l-8.237,14.486a1.066,1.066,0,0,1-1.856-.006Zm14.739-5.908a5.757,5.757,0,1,1-5.757-5.756A5.757,5.757,0,0,1,3990.329,1125.023Z" transform="translate(-3968.472 -1113.729)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>
