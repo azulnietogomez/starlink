@@ -46,10 +46,30 @@ header {
 /*--END HEADER STYLES*/
 
 /*--SIDE NAV MENU, HIDEN ON DESKTOP--*/
-.right-navbar {
+nav {
     top: 0;
+    left: 100%;
     position: fixed;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #aaa;
+    transition: left 0.3s;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    -o-transition: left 0.3s;
+}
+
+.right-navbar--show {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -58,6 +78,7 @@ header {
     background-color: black;
     color: #aaa;
 }
+
 
 .nav-header {
     display: flex;
@@ -120,14 +141,15 @@ main {
 }
 
 .title {
-    font-size: 4rem;
+    margin-bottom: 35px;
+    font-size: 3.8rem;
     line-height: 4rem;
     text-transform: uppercase;
 }
 
 .paragraph {
-    margin: 20px 0 20px 0;
-    font-size: 1.5rem;
+    margin: 20px 0 35px 0;
+    font-size: 1.6rem;
     font-weight: 100;
     font-family: DIN_Regular;
 }
@@ -151,16 +173,21 @@ main {
 }
 
 .anchor-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 50px;
     margin-bottom: 15px;
-    padding: 8px 25px 0 25px;
-    border: solid 1px white;
+    padding: 10px 20px 10px 20px;
+    border: solid 2px white;
     border-radius: 5px;
-    background-color: rgba(171, 171, 171, 0.267);
-    font-family: DIN_Regular, sans-serif;
-    font-size: 1.2rem;
+    background-color: transparent;
+    font-family: DIN_Bold, sans-serif;
+    font-size: 1.4rem;
     text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
     color: #fff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -171,10 +198,11 @@ main {
 .section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding: 50px 35px;
     text-align: left;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,6 +226,20 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     
+}
+
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+
+.hero-paragraph {
+    margin: 20px 0 20px 0;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-family: DIN_Regular;
 }
 
 .top-hero,.bottom-hero {
@@ -239,5 +281,201 @@ main {
 /*--ENDS HERO--*/
 
 /*--BEGINS SPEED SECTION--*/
+.speed-section {
+    background-image: url(../img/Marketing_LandingHighspeed_Mobile.jpg);
+}
 
 /*--ENDS SPEED SECTION--*/
+
+/*-- BEGINS CONFIG SECTION--*/
+
+.config-section {
+    min-height: 110vh;
+    max-height: 120vh;
+    padding: 0;
+    background-color: black;    
+}
+
+.kit-img-container {
+    width: 100%;
+    height: 40%;
+    background-image: url(../img//Marketing_LandingPlugin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.config-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    padding: 0px 35px;
+}
+
+.config-container .paragraph {
+    margin: 0px 0px 20px;
+}
+
+.config-container .paragraph a {
+    font-family: DIN_Bold;
+    color: white;
+}
+/*--ENDS CONFIG SECTION--*/
+
+/*--BEGINS TARGET SECTION--*/
+.target-section {
+    min-height: 110vh;
+    max-height: 120vh;
+    padding: 0;
+    background-color: black;
+}
+
+.target-img-container {
+    width: 100%;
+    height: 60%;
+    background-image: url(../img/Marketing_LandingRural.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.target-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    padding: 0px 35px;
+}
+/*--ENDS TARGET SECTION--*/
+
+/*--BEGINS SKY SECTION--*/
+.night-sky-section {
+    background-image: url(../img/Marketing_LandingPreserving_Mobile.jpg);
+}
+/*--ENDS SKY SECTION--*/
+
+/*--BEGINS CLEAN SKY SECTION--*/
+.clean-sky-section {
+    height: 140vh;
+    padding: 0;
+    background-color: black;
+}
+
+.clean-sky-img-container {
+    width: 100%;
+    height: 70%;
+    background-image: url(../img/Marketing_LandingKeepingClean.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clean-sky-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    padding: 35px 35px;
+}
+
+.clean-sky-container .paragraph {
+    margin: 10px 0 20px;
+}
+/*--ENDS CLEAN SKY SECTION--*/
+
+/*--BEGINS SPACE X SECTION--*/
+.space-x-section {
+    height: 125vh;
+    padding: 0;
+    background-color: black;
+}
+
+.space-x-img-container {
+    width: 100%;
+    height: 50%;
+    background-image: url(../img/Marketing_LandingEngineered.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.space-x-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    padding: 35px 35px;
+}
+/*--ENDS SPACE X SECTION--*/
+
+/*--BEGINS CAREERS SECTION--*/
+.careers-section {
+    height: 60vh;
+    background-color: black;
+    padding: 20px 35px;
+}
+
+.vertical-bar {
+    width: 1px;
+    height: 35%;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.careers-section .paragraph {
+    line-height: 3rem;
+    text-align: center;
+}
+/*--ENDS CAREERS SECTION--*/
+/*--BEGINS FOOTER--*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18vh;
+    background-color: black;
+}
+
+.starlink-brand-footer {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #aaa;
+}
+
+.private-policy {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.private-policy a {
+    font-family: DIN_Bold;
+    color: white;
+    text-decoration: none;
+}
+
+.spacex-division {
+    font-size: 1.2rem;
+    font-family: DIN_Light;
+    color: #aaa;
+}
+
+.spacex-division a {
+    font-family: DIN_Bold;
+    color: white;
+    text-decoration: none;
+}
+/*--ENDS FOOTER--*/
+

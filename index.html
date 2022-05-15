@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/base-styles.css">
     <link rel="stylesheet" href="./styles/mobile.css">
+    
     <title>Starlink</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
             <span class="toggle-menu toggle"></span>
         </button>
     </header>
-    <main>
+    
 <!--Begins Sidebar nav-->
-        <nav class="right-navbar">
+        <nav>
             <div class="nav-header">
                 <span class="gps-icon wildcard"></span>
                 <img src="./assets/logo_x_white.png" height="30px" alt="" class="nav-logo">
@@ -43,10 +44,11 @@
         </nav>
 <!--Ends Sidebar nav-->
 <!--Begins Main Section-->
+    <main>
         <section class="hero">
             <div class="top-hero">
-                <h1 class="title">Pedido de Starlink</h1>
-                <p class="paragraph">Starlink ofrece servicio de alta velocidad y baja latencia a través de todo el mundo. Dentro de cada área de cobertura, los pedidos son completados por orden de llegada.</p>
+                <h1 class="title hero-title">Pedido de Starlink</h1>
+                <p class="paragraph hero-paragraph">Starlink ofrece servicio de alta velocidad y baja latencia a través de todo el mundo. Dentro de cada área de cobertura, los pedidos son completados por orden de llegada.</p>
             </div>
             <div class="bottom-hero">
                 <input class="address-input" type="text" placeholder="Dirección de servicio">
@@ -98,7 +100,7 @@
 <!--Ends Sky Section-->
 
 <!--Begins Clean Sky section-->
-        <section class="celan-sky-section section">
+        <section class="clean-sky-section section">
             <div class="clean-sky-img-container"></div>
             <div class="clean-sky-container">
                 <h2 class="title">Mantener el espacio limpio</h2>
@@ -131,10 +133,12 @@
             <p class="paragraph starlink-brand-footer">Starlink © 2022
             </p>
             <p class="private-policy">
-                <a href="#">Operadores de satélite</a>
-                <a href="#">Privacidad y Legal</a>
+                <a href="#">Operadores de satélite  </a>
+                <span class="separator">  |  </span>
+                <a href="#">  Privacidad y Legal</a>
             </p>
             <p class="spacex-division">Starlink es una división de SpaceX. Visítenos en <a href="www.spacex.com">spacex.com</a></p>
         </footer>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
