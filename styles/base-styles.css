@@ -30,3 +30,23 @@ html {
     font-family: 'DIN-Bold', sans-serif, arial, verdana;
     color: white;
 }
+
+.attribution {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--just-white);
+}
+
+.attribution span a {
+    color: var(--cyan);
+    transition: ease-in-out 1s;
+}
+
+.attribution span a:hover {
+    font-size: 1.2rem;
+
+}
